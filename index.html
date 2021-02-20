@@ -59,27 +59,6 @@
 
     </div>
 
-    <section class="element">
-        <h3>Radio Buttons</h>
-          <div class="radio-set">
-            <label class="radio-container">Bar
-              <input type="radio" id="soap-type" checked="checked" name="radio">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="radio-set">
-            <label class="radio-container">Liquid
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="radio-set">
-            <label class="radio-container">Foam
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-      </section>
 
     <div class="element">
       <h3>Submit/Reset Buttons</h3>
@@ -113,24 +92,32 @@
 
 
     <div class="element">
-      <h3>Radio Button with Label</h3>
-      <form>
-        <div class="selectSize">
-          <input type="radio" name="size" id="7LB" value="7LB" checked>
-          <label for="7LB">7LB</label><br>
-
-          <input type="radio" name="size" id="15LB" value="15LB">
-          <label for="15LB">15LB</label><br>
-
-          <input type="radio" name="size" id="25LB" value="25LB">
-          <label for="25LB">25LB</label><br>
+      <h3>Radio Buttons with label</h3>
+        <div class="radio-set">
+          <label class="radio-container">7LB
+            <input type="radio" id="soap-type" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
         </div>
-      </form>
+        <div class="radio-set">
+          <label class="radio-container">15LB
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="radio-set">
+          <label class="radio-container">25LB
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
       <h4>CSS selector:</h4>
-      <p>.selectSize</p>
+      <p>.radio-set .radio-container</p>
       <h4>Sample code:</h4>
-      <code>&lt;input type="radio" name="size" id="7LB" value="7LB" checked&gt;</code>
-      <code>&lt;label for="7LB"&gt;7LB&lt;/label&gt;</code>
+      <code>&lt;label class="radio-container"&gt;7LB</code>
+      <code>&lt;type="radio" id="soap-type" checked="checked" name="radio"&gt;</code>
+      <code>&lt;class="checkmark"&gt;&lt;/span&gt;</code>
+      <code>&lt;/label&gt;</code>
     </div>
 
 

@@ -122,7 +122,7 @@ code {
 }
 
 .radio-set input:checked ~ .checkmark {
-  background-color: #FFA511;
+  background-color: #00EBC7;
 }
 
 /* Make circle inside radio button*/
