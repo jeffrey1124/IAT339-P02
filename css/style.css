@@ -88,6 +88,65 @@ code {
   text-decoration: underline;
 }
 
+/* Radio Buttons */
+.radio-set {
+  display: block;
+  position: relative;
+  padding-left: 100px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #DFDFDF;
+  border-radius: 30%;
+}
+
+/* Remove/hide default radio buttons */
+.radio-set input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-set:hover input ~ .checkmark {
+  background-color: #BBBBBB;
+}
+
+.radio-set input:checked ~ .checkmark {
+  background-color: #FFA511;
+}
+
+/* Make circle inside radio button*/
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show circle in radio */
+.radio-set input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-set .checkmark:after {
+ 	top: 8px;
+	left: 8px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: white;
+}
+
+/*End of Radio Buttons*/
 
 /*Top Bar*/
 .top-menu{
