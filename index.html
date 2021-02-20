@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P02 - Style Guide</title>
+  <script src="https://kit.fontawesome.com/6318b47d97.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <p id="title">P02 - Style Guide</p>
+  </header>
+
+  <nav>
+    <a href="#interactive_elements">Interactive Elements</a>
+    <a href="#text_elements">Text Elements</a>
+    <a href="#combined_elements">Combined Elements</a>
+    <a href="product_listing.html">Product Listing Template</a>
+    <a href="checkout.html">Checkout Template</a>
+    <a href="#citations">Citations</a>
+  </nav>
+
+
+
+  <!-- INTERACTIVE ELEMENTS div // -->
+  <div id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <div class="element">
+      <h3>In-text link</h3>
+      <a href="#" class="item-title">Purina Cat Chow Dry Cat Food, Complete - 15 Pound Bag</a>
+      <h4>CSS selector:</h4>
+      <p>.item-title</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="item-title"&gt;Purina Cat Chow Dry Cat Food, Complete - 15 Pound Bag&lt;/a&gt;</code>
+    </div>
+
+
+    <!-- Default Button styling div -->
+    <div class="element">
+
+      <h3>Navigation Link</h3>
+      <a class="menu" href="#">Food</a>
+      <h4>CSS selector:</h4>
+      <p>.menu</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a class="menu" href="#"&gt;Food&lt;/a&gt;</code>
+
+
+    </div>
+
+
+    <div class="element">
+      <h3>Submit/Reset Buttons</h3>
+      <a class="SubButton" href="#">Submit</a>
+      <h4>CSS selector:</h4>
+      <p>.SubButton</p>
+      <a class="ResetButton" href="#">Reset</a>
+      <h4>CSS selector:</h4>
+      <p>.ResetButton</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a class="button" href="#"&gt;Submit&lt;/a&gt;</code>
+    </div>
+
+
+    <div class="element">
+      <h3>Text Input Field with Label</h3>
+      <form>
+        <div class="signIn">
+          <label for="Acc">Account:</label>
+          <input type="text" id="Acc" placeholder="Account"><br><br>
+          <label for="PW">Password:</label>
+          <input type="password" id="PW" placeholder="Password">
+        </div>
+      </form>
+      <h4>CSS selector:</h4>
+      <p>.signIn</p>
+      <h4>Sample code:</h4>
+      <code>&lt;label for="Acc"&gt;Account:&lt;/label&gt;</code>
+      <code>&lt;input type="text" id="Acc" placeholder="Account"&gt;</code>
+    </div>
+
+
+    <div class="element">
+      <h3>Radio Button with Label</h3>
+      <form>
+        <div class="selectSize">
+          <input type="radio" name="size" id="7LB" value="7LB" checked>
+          <label for="7LB">7LB</label><br>
+
+          <input type="radio" name="size" id="15LB" value="15LB">
+          <label for="15LB">15LB</label><br>
+
+          <input type="radio" name="size" id="25LB" value="25LB">
+          <label for="25LB">25LB</label><br>
+        </div>
+      </form>
+      <h4>CSS selector:</h4>
+      <p>.selectSize</p>
+      <h4>Sample code:</h4>
+      <code>&lt;input type="radio" name="size" id="7LB" value="7LB" checked&gt;</code>
+      <code>&lt;label for="7LB"&gt;7LB&lt;/label&gt;</code>
+    </div>
+
+
+    <div class="element">
+      <h3>Image as a Link</h3>
+      <a href="#" class="item-image"><img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food"></a>
+      <h4>CSS selector:</h4>
+      <p>.item-image</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="item-image"&gt;&lt;img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food"&gt;&lt;/a&gt;</code>
+    </div>
+
+
+  </div>
+  <!-- // INTERACTIVE ELEMENTS div -->
+
+
+
+  <!-- TEXT ELEMENTS div // -->
+  <div id="text_elements">
+    <h2>Text Elements</h2>
+    <div class="element">
+      <h3>Headings</h3>
+      <h1>Food (Heading 1)</h1>
+      <h2 id="text-h2">Recommend (Heading 2)</h2>
+      <h3>Item name (Heading 3)</h3>
+      <h4>Ingredients (Heading 4)</h4>
+      <h5>footer (Heading 5)</h5>
+    </div>
+
+    <div class="element">
+      <h3>Paragraphs</h3>
+      <p class="item-description">Salmon; Liver; Water Sufficient for Processing; Meat By-Products; Soybean Oil; Chicory Root; Tuna; Artificial and Natural Flavors; Salt; Tricalcium Phosphate; Guar Gum; Taurine; Potassium Chloride.</p>
+      <h4>CSS selector:</h4>
+      <p>.item-description</p>
+      <h4>Sample code:</h4>
+      <code>&lt;p class="item-description"&gt;Salmon; Liver; Water Sufficient for Processing; Meat By-Products;&lt;/p&gt;</code>
+    </div>
+
+    <div class="element">
+      <h3>Numbered Lists</h3>
+      <div class="item-instruction">
+        <ol>
+          <li>Remove excess matter from eye corners.</li>
+          <li>Apply 2–3 drops in each eye.</li>
+          <li>Use several drops daily to reduce irritation from dust, pollen and ragweed.</li>
+        </ol>
+      </div>
+
+      <h4>CSS selector:</h4>
+      <p>.item-instruction</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;ol&gt;<br>
+          &lt;li&gt;Remove excess matter from eye corners.&lt;/li&gt;<br>
+          &lt;li&gt;Apply 2–3 drops in each eye.&lt;/li&gt;<br>
+          &lt;li&gt;Use several drops daily to reduce irritation from dust, pollen and ragweed.&lt;/li&gt;<br>
+        &lt;/ol&gt;
+      </code>
+    </div>
+
+  </div>
+  <!-- // TEXT ELEMENTS div -->
+
+  <!-- COMBINED ELEMENTS div // -->
+  <div id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <div class="navi">
+      <h3>Main Navigation</h3>
+      <div class="top-menu">
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <a class="menu" id="checked" href="product_listing.html">Food</a>
+        <a class="menu" href="#Toy">Toy</a>
+        <a class="menu" href="#Health">Health</a>
+        <a class="menu" href="#Supplies">Supplies</a>
+        <a class="menu" href="#Sale">Sale</a>
+        <a class="menu" href="#Info">Information</a>
+        <a class="icons" href="#Acc"><i class="fas fa-user-circle"></i></a>
+        <a class="icons" href="#search"><i class="fas fa-search"></i></a>
+        <a class="icons" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        <a class="icons" id="ham" href="#"><i class="fa fa-bars"></i></a>
+      </div>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a class=&quot;logo&quot; href=&quot;index.html&quot;&gt;&lt;img src=&quot;img/logo.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; id=&quot;checked&quot; href=&quot;product_listing.html&quot;&gt;Food&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;#Toy&quot;&gt;Toy&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;#Health&quot;&gt;Health&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;#Supplies&quot;&gt;Supplies&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;#Sale&quot;&gt;Sale&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;#Info&quot;&gt;Information&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; href=&quot;#Acc&quot;&gt;&lt;i class=&quot;fas fa-user-circle&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; href=&quot;#search&quot;&gt;&lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; href=&quot;checkout.html&quot;&gt;&lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; id=&quot;ham&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      </code>
+    </div>
+
+    <div class="prod">
+      <h3>Product/Service Listing</h3>
+      <div class="item-list">
+        <ul>
+          <li>
+            <a href="#"><img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food" class="list-img"></a>
+            <div class="listing">
+              <h3><a href="#" class="item-title">Purina ONE® Urinary Tract Health Formula Cat Food</a></h3>
+              <p>
+                Dry cat food formulated to help maintain Urinary Tract Health by reducing urinary pH and providing low magnesium.
+              </p>
+              <!-- price -->
+              <div class="price">$ 19.00</div>
+              <div class="img_btn">
+                  <p><button>Add to Cart</button></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h4>Sample code:</h4>
+    <code>
+      &lt;div class=&quot;item-list&quot;&gt;<br>
+      &lt;ul&gt;<br>
+      &lt;li&gt;<br>
+      &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/f1.png&quot; alt=&quot;Purina ONE&reg; Urinary Tract Health Formula Cat Food&quot; class=&quot;list-img&quot;&gt;&lt;/a&gt;<br>
+      &lt;div class=&quot;listing&quot;&gt;<br>
+      &lt;h3&gt;&lt;a href=&quot;#&quot; class=&quot;item-title&quot;&gt;Purina ONE&reg; Urinary Tract Health Formula Cat Food&lt;/a&gt;&lt;/h3&gt;<br>
+      &lt;p&gt; Dry cat food formulated to help maintain Urinary Tract Health by reducing urinary pH and providing low magnesium. &lt;/p&gt;<br>
+      &lt;div class=&quot;price&quot;&gt;$ 19.00&lt;/div&gt;<br>
+      &lt;div class=&quot;img_btn&quot;&gt;<br>
+      &lt;p&gt;&lt;button&gt;Add to Cart&lt;/button&gt;&lt;/p&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+      &lt;/div&gt;
+    </code>
+
+    <div class="element">
+      <h3>Payment Form</h3>
+      <form class="payment">
+        <label for="CN">Card Number:</label>
+        <input type="text" id="CN" placeholder="Card Number">
+        <label for="CHN">Card Holder Name:</label>
+        <input type="text" id="CHN" placeholder="Card Holder Name"><br>
+        <label for="EDate">Expiry Date:</label>
+        <input type="date" id="EDate">
+        <label for="CVV">CVV:</label>
+        <input type="text" id="CVV" placeholder="CVV"><br>
+        <button class="SubButton">Submit</button>
+      </form>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;form class=&quot;payment&quot;&gt;<br>
+        &lt;label for=&quot;CN&quot;&gt;Card Number:&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; id=&quot;CN&quot; placeholder=&quot;Card Number&quot;&gt;<br>
+        &lt;label for=&quot;CHN&quot;&gt;Card Holder Name:&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; id=&quot;CHN&quot; placeholder=&quot;Card Holder Name&quot;&gt;<br>
+        &lt;label for=&quot;EDate&quot;&gt;Expiry Date:&lt;/label&gt;<br>
+        &lt;input type=&quot;date&quot; id=&quot;EDate&quot;&gt;<br>
+        &lt;label for=&quot;CVV&quot;&gt;CVV:&lt;/label&gt;<br>
+        &lt;input type=&quot;text&quot; id=&quot;CVV&quot; placeholder=&quot;CVV&quot;&gt;<br>
+        &lt;button class=&quot;SubButton&quot;&gt;Submit&lt;/button&gt;<br>
+        &lt;/form&gt;
+      </code>
+    </div>
+
+    <div class="element">
+      <h3>Checkout Cart</h3>
+      <!--Checkout Cart-->
+      <div class="checkout-cart">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr class="checkout-item">
+            <td>
+              <div class="checkout-info">
+                <div class="checkout-imgs">
+                  <img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food">
+                </div>
+                <div>
+                  <a href="#" class="item-title" >Purina ONE® Urinary Tract Health Formula Cat Food</a><br>
+                  <a href="#" class="remove">Remove</a>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <h5>$19.00</h5>
+            </td>
+            <td>
+              <div class="qty">
+                <input type="number" value="1" min="0" max="50">
+              </div>
+            </td>
+            <td>
+              <h5>$19.00</h5>
+            </td>
+          </tr>
+
+          <tr class="checkout-item">
+            <td>
+              <div class="checkout-info">
+                <div class="checkout-imgs">
+                  <img src="img/h1.jpg" alt="Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle">
+                </div>
+                <div>
+                  <a href="#" class="item-title" >Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle</a><br>
+                  <a href="#" class="remove">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <h5>$9.45</h5>
+            </td>
+            <td>
+              <div class="qty">
+                <input type="number" value="1" min="0" max="50">
+              </div>
+            </td>
+            <td>
+              <h5>$9.45</h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="final-total">
+        <div class="total-list">
+          <!--total-->
+          <table>
+            <tr>
+              <td>Subtotal:</td>
+              <td>$28.45</td>
+            </tr>
+            <tr>
+              <td>Tax:</td>
+              <td>$3.41</td>
+            </tr>
+            <tr>
+              <td>Total:</td>
+              <td id="total-value">$31.86</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;div class=&quot;checkout-cart&quot;&gt;<br>
+        &lt;table&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;th&gt;Product&lt;/th&gt;<br>
+        &lt;th&gt;Unit Price&lt;/th&gt;<br>
+        &lt;th&gt;Quantity&lt;/th&gt;<br>
+        &lt;th&gt;Total&lt;/th&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr class=&quot;checkout-item&quot;&gt;<br>
+        &lt;td&gt;<br>
+        &lt;div class=&quot;checkout-info&quot;&gt;<br>
+        &lt;div class=&quot;checkout-imgs&quot;&gt;<br>
+        &lt;img src=&quot;img/f1.png&quot; alt=&quot;Purina ONE&reg; Urinary Tract Health Formula Cat Food&quot;&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div&gt;<br>
+        &lt;a href=&quot;#&quot; class=&quot;item-title&quot; &gt;Purina ONE&reg; Urinary Tract Health Formula Cat Food&lt;/a&gt;<br>
+        &lt;a href=&quot;#&quot; class=&quot;remove&quot;&gt;Remove&lt;/a&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/td&gt;<br>
+        &lt;td&gt;<br>
+        &lt;h5&gt;$19.00&lt;/h5&gt;<br>
+        &lt;/td&gt;<br>
+        &lt;td&gt;<br>
+        &lt;div class=&quot;qty&quot;&gt;<br>
+        &lt;input type=&quot;number&quot; value=&quot;1&quot; min=&quot;0&quot; max=&quot;50&quot;&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/td&gt;<br>
+        &lt;td&gt;<br>
+        &lt;h5&gt;$19.00&lt;/h5&gt;<br>
+        &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class=&quot;final-total&quot;&gt;<br>
+        &lt;div class=&quot;total-list&quot;&gt;<br>
+        &lt;table&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Subtotal:&lt;/td&gt;<br>
+        &lt;td&gt;$28.45&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Tax:&lt;/td&gt;<br>
+        &lt;td&gt;$3.41&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Total:&lt;/td&gt;<br>
+        &lt;td id=&quot;total-value&quot;&gt;$31.86&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+      </code>
+    </div>
+
+  </div>
+  <!-- // COMBINED ELEMENTS div -->
+
+  <div class="element">
+    <h2>Basic branding ideas</h2>
+    <p>CatWorld is a company that sells cat products such as food, supplies, medicines and toys. The potential customers are the people who have cats in their house. Compared to other pet supplies stores that sell many different pets' products,
+      CatWorld focuses on people who only want to find products related to cats. Additionally, the website has an information page that has many cat related articles which can help owners to learn more about their cats.</p>
+  </div>
+
+  <div class="element">
+    <h2>Brand components</h2>
+    <h3>Logo/Home page</h3>
+    <a href="#Home"><img src="img/logo.png" alt="CatWorld logo"></a>
+    <h3>Font</h3>
+    <p style="font-family:'Concert One', cursive; ">Concert One for menu</p>
+    <p style="font-family: 'PT Sans', sans-serif;"><strong>PT Sans Bold for Subheading</strong></p>
+    <p style="font-family: 'PT Sans', sans-serif;">PT Sans for body text</p>
+    <h3>Colour palettes</h3>
+    <div class="colour">
+      <p style="background:#72D7DF">#72D7DF</p>
+      <p style="background:#00EBC7">#00EBC7</p>
+      <p style="background:#1B2D45">#1B2D45</p>
+      <p style="background:#00214D">#00214D</p>
+      <p style="background:#01010D">#01010D</p>
+    </div>
+    <img src="img/Colour_palettes.png" alt="Colour palettes">
+    <h2>Home page mockup</h2>
+    <img src="img/Home_mockup.png" alt="Home page mockup">
+  </div>
+
+
+
+
+
+  <div id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>Johan Kallas. Designer. 2017. <strong>Concert One [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Concert+One?preview.text_type=custom&query=concert#standard-styles">https://fonts.google.com/specimen/Concert+One?preview.text_type=custom&query=concert#standard-styles</a>
+      </li>
+      <li>Alexandra Korolkova, Olga Umpeleva and Vladimir Yefimov. Designer. 2009. <strong>PT Sans [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/PT+Sans?preview.text_type=custom&query=pt+san#standard-styles">https://fonts.google.com/specimen/PT+Sans?preview.text_type=custom&query=pt+san#standard-styles</a></li>
+      <li>Purina One. Pet supplies company. 2012. <strong>Purina ONE [Images]</strong>. Retrieved from <a href="https://www.purina.com/purina-one/cats/dry-cat-food/urinary-tract-health-formula">https://www.purina.com/purina-one/cats/dry-cat-food/urinary-tract-health-formula</a></li>
+      <li>Four Paws. Pet products company. 2004. <strong>Four Paws Ear Mite Remedy [Images]</strong>. Retrieved from <a href="https://www.amazon.com/Four-Paws-Mite-Remedy-0-75oz/dp/B001OVF5B8">https://www.amazon.com/Four-Paws-Mite-Remedy-0-75oz/dp/B001OVF5B8</a></li>
+      <li>Purina One. Pet supplies company. 2015. <strong>Fancy Feast [Images]</strong>. Retrieved from <a href="https://www.purina.com/fancy-feast/dry-cat-food/chicken-turkey">https://www.purina.com/fancy-feast/dry-cat-food/chicken-turkey</a></li>
+      <li>Purina One. Pet supplies company. 2010. <strong>Friskies Farm [Images]</strong>. Retrieved from <a href="https://www.purina.com/friskies/dry-cat-food/farm-favorites-chicken-carrots-spinach">https://www.purina.com/friskies/dry-cat-food/farm-favorites-chicken-carrots-spinach</a></li>
+      <li>Purina One. Pet supplies company. 2011. <strong>BEYOND [Images]</strong>. Retrieved from <a href="https://www.purina.com/beyond/cats/dry-cat-food/grain-free-arctic-char">https://www.purina.com/beyond/cats/dry-cat-food/grain-free-arctic-char</a></li>
+      <li>Font Awesome. Font and icon toolkit based on CSS. 2012. <strong>All the icons in the project [Icons]</strong> Retrieved from <a href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+    </ul>
+
+  </div>
+
+
+</body>
+
+</html>

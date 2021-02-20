@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Checkout</title>
+  <script src="https://kit.fontawesome.com/6318b47d97.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- top-menu -->
+  <div class="top-menu">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+    <a class="menu" href="product_listing.html">Food</a>
+    <a class="menu" href="#Toy">Toy</a>
+    <a class="menu" href="#Health">Health</a>
+    <a class="menu" href="#Supplies">Supplies</a>
+    <a class="menu" href="#Sale">Sale</a>
+    <a class="menu" href="#Info">Information</a>
+    <a class="icons" href="#Acc"><i class="fas fa-user-circle"></i></a>
+    <a class="icons" href="#search"><i class="fas fa-search"></i></a>
+    <a class="icons" id="checked" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+    <a class="icons" id="ham" href="#"><i class="fa fa-bars"></i></a>
+  </div>
+
+  <!--content-->
+  <h1>Shopping Cart</h1>
+  <!--Checkout Cart-->
+  <div class="checkout-cart">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr class="checkout-item">
+        <td>
+          <div class="checkout-info">
+            <div class="checkout-imgs">
+              <img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food">
+            </div>
+            <div>
+              <a href="#" class="item-title out-title">Purina ONE® Urinary Tract Health Formula Cat Food</a><br>
+              <a href="#" class="remove">Remove</a>
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <h5>$19.00</h5>
+        </td>
+        <td>
+          <div class="qty">
+            <input type="number" value="1" min="0" max="50">
+          </div>
+        </td>
+        <td>
+          <h5>$19.00</h5>
+        </td>
+      </tr>
+
+      <tr class="checkout-item">
+        <td>
+          <div class="checkout-info">
+            <div class="checkout-imgs">
+              <img src="img/h1.jpg" alt="Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle">
+            </div>
+            <div>
+              <a href="#" class="item-title out-title">Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle</a><br>
+              <a href="#" class="remove">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <h5>$9.45</h5>
+        </td>
+        <td>
+          <div class="qty">
+            <input type="number" value="1" min="0" max="50">
+          </div>
+        </td>
+        <td>
+          <h5>$9.45</h5>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <h2>Payment</h2>
+  <div class="final-total">
+    <!--Payment-->
+    <div class="payment">
+      <label for="CN"><i class="far fa-credit-card"></i> Card Number:</label>
+      <input type="text" id="CN" placeholder="Card Number">
+      <label for="CHN"><i class="fas fa-user"></i> Card Holder Name:</label>
+      <input type="text" id="CHN" placeholder="Card Holder Name">
+      <label for="EDate"><i class="fas fa-calendar-day"></i> Expiry Date:</label>
+      <input type="date" id="EDate"><br>
+      <label for="CVV"><i class="fas fa-key"></i> CVV:</label>
+      <input type="text" id="CVV" placeholder="CVV">
+      <!-- <button class="SubButton">Submit</button> -->
+    </div>
+    <div class="total-list">
+      <!--total-->
+      <table>
+        <tr>
+          <td>Subtotal:</td>
+          <td>$28.45</td>
+        </tr>
+        <tr>
+          <td>Tax:</td>
+          <td>$3.41</td>
+        </tr>
+        <tr>
+          <td>Total:</td>
+          <td id="total-value">$31.86</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="checkoutbt">
+    <p><button>PROCEED TO CHECKOUT</button></p>
+  </div>
+
+
+</body>
+
+</html>

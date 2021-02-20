@@ -1,0 +1,432 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: 'PT Sans',sans-serif;
+  padding: 2rem;
+}
+
+#title{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#text-h2{
+  margin: 0;
+}
+
+.colour{
+  width: 300px;
+  color: white;
+}
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.navi{
+  padding-bottom: 7rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.prod{
+  padding-bottom: 37rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* In text link*/
+.item-title{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.item-title:link {
+  text-decoration: none;
+}
+.item-title:hover{
+  color: #00EBC7;
+  text-decoration: underline;
+}
+
+.item-title:active{
+  color: #00214D;
+  text-decoration: underline;
+}
+
+
+/*Top Bar*/
+.top-menu{
+  overflow: hidden;
+  background-color: #00EBC7;
+}
+
+.top-menu .logo img{
+  float: left;
+  height: auto;
+  width: 220px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+  padding: 10px 30px 0px 30px;
+}
+
+.top-menu .logo img:hover{
+  opacity: 0.7;
+}
+
+.top-menu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Concert One', sans-serif;
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  float: left;
+}
+
+ .top-menu .menu:hover {
+  background-color: #009d85;
+  color: white;
+}
+
+.top-menu .icons{
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  font-size: 30px;
+}
+
+.top-menu .icons:hover{
+  background-color: #009d85;
+  color: white;
+}
+
+/* Styling for the navigation button */
+.SubButton {
+  background-color: #00EBC7;
+  border: none;
+  color: #00214D;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.ResetButton{
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.SubButton:hover {
+  background-color: #009d85;
+  color: white;
+  font-weight: bold;
+}
+
+.ResetButton:hover {
+  background-color: #9a0000;
+  color: white;
+  font-weight: bold;
+}
+
+/*Text Input Field with Label*/
+form{
+  border: 1px solid #000000;
+  border-radius: 4px;
+  width:170px;
+  padding: 5px;
+}
+
+.signIn label {
+  color: #00214D;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signIn input{
+  background: #fff;
+  border: 2px solid #c6c7cc;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/*Image as a Link*/
+.item-image img{
+ max-width: 150px;
+ height: auto;
+}
+
+.item-image img:hover{
+  border: 1px solid #00EBC7;
+  border-radius: 4px;
+  padding: 5px;
+  width: auto;
+  opacity: 0.8;
+  transition-duration: 0.2s;
+}
+
+.item-image img:active{
+  border-color: red;
+  transition-duration: 0.2s;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+.item-description{
+  max-width: 50%;
+}
+
+.item-instruction{
+  border: 1px solid black;
+  border-radius: 4px;
+  max-width: 30%;
+  padding: 1px;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Main Navigation */
+.top-menu{
+
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #00EBC7;
+}
+
+.top-menu .logo img{
+  float: left;
+  height: auto;
+  width: 190px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-menu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Concert One', sans-serif;
+  border: none;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  float: left;
+  margin: 0;
+}
+
+ .top-menu .menu:hover {
+  background-color: #009d85;
+  color: white;
+}
+
+/*Product/Service Listing*/
+.item-list ul li{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+	float: left;
+	margin: 0 60px 60px 0;
+	list-style: none;
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	height: 500px;
+}
+
+.item-list .list-img{
+  display: block;
+  max-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.item-list .listing h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.item-list .listing{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.item-list .listing p{
+  font-size: 1rem;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.item-list .price{
+  font-weight: bold;
+	color: black;
+	font-size: 1.5rem;
+  float: left;
+}
+
+.item-list .listing .img_btn button{
+  margin-top: 10px;
+  border-radius: 5px;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #00EBC7;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.item-list .listing .img_btn button:hover{
+  background-color: #009d85;
+}
+
+.item-list ul li:hover{
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+/*payment*/
+.payment{
+  width: 220px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.payment label{
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  text-align:left;
+
+}
+
+.payment input{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+
+/*checkout cart*/
+.checkout-cart{
+  display: flex;
+  justify-content: center;
+
+}
+
+.checkout-cart table{
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.checkout-cart .checkout-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-cart th{
+  text-align: left;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color:  #1B2D45;
+}
+.checkout-cart tr{
+  border-bottom: 2px solid lightgrey;
+}
+.checkout-cart .checkout-item .remove{
+  font-size: 15px;
+  color: black;
+}
+
+.checkout-cart .checkout-item .remove:hover{
+  color: red;
+}
+.checkout-cart .checkout-info .checkout-imgs img{
+  max-width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+.total-list{
+  padding: 0 16px;
+}
+
+
+.final-total{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.final-total table{
+  background-color: white;
+  padding: 3px 18px 13px 18px;
+  border: 2px solid #1B2D45;
+  border-radius: 3px;
+  box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+
+}
+.final-total td{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5% 5%;
+}
