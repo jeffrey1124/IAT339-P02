@@ -627,19 +627,24 @@ h5{
   font-size: 1rem;
 }
 
-.bar-5, .bar-2, .bar-1 {
+.bar-2, .bar-1 {
   height: 18px;
 }
 
-
-.bar-4 {
+.bar-5 {
   width: 60%;
   height: 18px;
   background-color: #ffc107;
 }
 
+.bar-4 {
+  width: 40%;
+  height: 18px;
+  background-color: #ffc107;
+}
+
 .bar-3 {
-  width: 15%;
+  width: 10%;
   height: 18px;
   background-color: #ffc107;
 }
