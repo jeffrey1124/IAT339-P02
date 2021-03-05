@@ -651,6 +651,16 @@ h5{
   background-color: #ffc107;
 }
 
+.bar-3-product2, .bar-4-product2 {
+  height: 18px;
+}
+
+.bar-5-product2 {
+  width: 100%;
+  height: 18px;
+  background-color: #ffc107;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
