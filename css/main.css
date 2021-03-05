@@ -693,6 +693,48 @@ h5 {
   }
 }
 
+/* popup window for writting review */
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:white;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+}
+
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 350ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+#canel{
+  background-color: red;
+}
+
+#canel:hover{
+  background-color: #b30000;
+}
+
+
 /* About us */
 .hero-image {
   margin-top: 1%;

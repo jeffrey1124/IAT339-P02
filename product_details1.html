@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -203,12 +203,24 @@
         </div>
       </div>
       <!-- button should open up a textbox or something to write in (should have submit button but does not need to actually post review) -->
-      <button type="button" class="detail-btn" onclick="openForm()">
+      <button type="button" class="detail-btn" onclick="popup()">
         Write a review<i class="fas fa-pen"></i>
       </button>
     </div>
   </section>
 
+  <!-- pop up review section -->
+  <div class="popup" id="review-popup">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Write you review</h2>
+      <textarea rows="8" cols="50" placeholder="Enter your review here"></textarea>
+      <div class="review-button">
+        <button type="button" onclick="popup()">Submit</button>
+        <button type="button" onclick="popup()" id="canel">Cancel</button>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="footer-content">
