@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -40,12 +40,12 @@
           </div>
           <div class="img-item">
             <a href="#">
-              <img src="img/f1-2.jpg" alt="cat food image2">
+              <img src="img/f2-2.jpg" alt="cat food image2">
             </a>
           </div>
           <div class="img-item">
             <a href="#">
-              <img src="img/f1-3.jpg" alt="cat food image3">
+              <img src="img/f2-3.jpg" alt="cat food image3">
             </a>
           </div>
         </div>
@@ -78,21 +78,21 @@
         <div class="select-size">
           <p><span>Select size: </span></p>
           <select>
-            <option value="7LB">7LB / $29.45</option>
-            <option value="15LB">15LB / $44.90</option>
-            <option value="25LB">25LB / $61.25</option>
+            <option value="3LB">7LB / $9.45</option>
+            <option value="5LB">15LB / $14.90</option>
+            <option value="11LB">25LB / $25.25</option>
           </select>
         </div>
 
         <div class="product-price">
-          <p>Price: <span>$29.45</span></p>
+          <p>Price: <span>$9.45</span></p>
         </div>
 
         <div class="purchase-qty">
           <span>Quantity: </span><input type="number" min="1" value="1" max="50">
         </div>
-        <button type="button" class="detail-btn">
-          <a href="checkout.html">Add to Cart <i class="fas fa-shopping-cart"></i></a>
+        <button type="button" class="detail-btn" onclick="document.location='checkout.html'">
+          Add to Cart <i class="fas fa-shopping-cart"></i>
         </button>
       </div>
 
@@ -205,18 +205,33 @@
         </div>
       </div>
       <!-- button should open up a textbox or something to write in (should have submit button but does not need to actually post review) -->
-      <button type="button" class="detail-btn" onclick="openForm()">
+      <button type="button" class="detail-btn" onclick="popup()">
         Write a review<i class="fas fa-pen"></i>
       </button>
     </div>
   </section>
 
+  <!-- pop up review section -->
+  <div class="popup" id="review-popup">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Write you review</h2>
+      <textarea rows="8" cols="50" placeholder="Enter your review here"></textarea>
+      <div class="review-button">
+        <button type="button" onclick="popup()">Submit</button>
+        <button type="button" onclick="popup()" id="canel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <a href="index.html">Style Guide</a>
+      <a href="citations.html">Citations</a>
+      <a href="https://github.com/jeffrey1124/IAT339-P02">Git Repository</a>
+    </div>
+  </footer>
 </body>
 
-<footer>
-  <div class="footer-content">
-    <a href="citations.html">Citations</a>
-  </div>
-</footer>
 
 </html>
