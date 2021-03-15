@@ -886,3 +886,13 @@ input[name="r"]{
 #r3:checked ~ .s1{
   margin-left: -40%;
 }
+
+@media screen and (max-width: 890px){
+  .dot{
+    max-width: 0.75rem;
+    max-height: 0.75rem;
+    min-width: 0.25rem;
+    min-height: 0.25rem;
+
+  }
+}
