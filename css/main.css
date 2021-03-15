@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-weight: bold;
+
 }
 
 /*Top menu*/
@@ -896,6 +896,10 @@ input[name="r"]{
   }
 }
 
+.homepage-lineup h2{
+  text-align: center;
+}
+
 .home-content h2 {
   text-align: center;
   padding-bottom: 25px;
@@ -920,6 +924,26 @@ input[name="r"]{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 25px;
+}
+
+.home-listing-button {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #00EBC7;
+  color: black;
+  border: none;
+  padding: 16px 32px;
+  width: 80%;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  margin-left: 10%;
+}
+
+.home-listing-button:hover{
+  background-color: #009d85;
 }
 
 .footer-content{
@@ -934,11 +958,12 @@ input[name="r"]{
   padding: 10px;
 }
 
-#citations h1, h2{
+#citations h1{
   text-align: left;
 }
 
 #citations h2{
+  text-align: left;
   padding-left: 25px;
 }
 
