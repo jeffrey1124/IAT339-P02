@@ -933,3 +933,15 @@ input[name="r"]{
 .footer-content a{
   padding: 10px;
 }
+
+#citations h1, h2{
+  text-align: left;
+}
+
+#citations h2{
+  padding-left: 25px;
+}
+
+#citations p{
+  padding-left: 50px;
+}
