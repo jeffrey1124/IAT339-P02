@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-weight: bold;
+
 }
 
 /*Top menu*/
@@ -885,4 +885,91 @@ input[name="r"]{
 }
 #r3:checked ~ .s1{
   margin-left: -40%;
+}
+
+@media screen and (max-width: 890px){
+  .dot{
+    max-width: 0.75rem;
+    max-height: 0.75rem;
+    min-width: 0.25rem;
+    min-height: 0.25rem;
+  }
+}
+
+.homepage-lineup h2{
+  text-align: center;
+}
+
+.home-content h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.homepage-lineup {
+  background-color: white;
+  border: 4px solid #00EBC7;
+  border-radius: 8px;
+  width: 100%;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.lineuplisting{
+  max-width: 350px;
+  max-height: 350px;
+  padding: 20px;
+  margin-right: 50px;
+  box-shadow: 0 4px 8px 2px rgb(0, 235, 199, 50%);
+}
+
+.lineup-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.home-listing-button {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #00EBC7;
+  color: black;
+  border: none;
+  padding: 16px 32px;
+  width: 30%;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  margin-left: 35%;
+}
+
+.home-listing-button:hover{
+  background-color: #009d85;
+}
+
+.footer-content{
+  background-color: #00EBC7;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Concert One', sans-serif;
+  font-size: 1.25rem;
+}
+
+.footer-content a{
+  padding: 10px;
+}
+
+#citations h1{
+  text-align: left;
+}
+
+#citations h2{
+  text-align: left;
+  padding-left: 25px;
+}
+
+#citations p{
+  padding-left: 50px;
 }
