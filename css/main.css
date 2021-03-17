@@ -260,6 +260,16 @@ h5 {
   color: #1B2D45;
 }
 
+.checkout-cart .checkout-item i{
+  text-decoration: none;
+  padding-left: 0.2rem;
+  color: black;
+}
+
+.checkout-cart .checkout-item i:hover{
+  color: red;
+}
+
 .checkout-cart .checkout-info .checkout-imgs img {
   max-width: 80px;
   height: auto;
@@ -271,6 +281,7 @@ h5 {
   padding: 0 16px;
 }
 
+
 .final-total {
   display: flex;
   flex-wrap: wrap;
@@ -278,6 +289,7 @@ h5 {
 }
 
 .final-total table {
+  width: 100%;
   background-color: white;
   padding: 3px 18px 13px 18px;
   border: 2px solid #1B2D45;
@@ -305,22 +317,23 @@ h5 {
 
   }
 
-  .payment {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    min-width: 330px;
-
-  }
-
-  .total-list {
-    min-width: 400px;
-    padding-left: 22%;
-  }
-
-  .final-total {
-    flex-direction: column;
+  .final-total{
+    flex-direction:column;
     align-items: center;
   }
+
+  .payment {
+    padding: 0;
+    min-width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .total-list{
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
 
 }
 
