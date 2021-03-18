@@ -951,11 +951,17 @@ input[name="r"]{
 
 .homepage-lineup {
   background-color: white;
-  border: 4px solid #00EBC7;
-  border-radius: 8px;
+  /* border: 4px solid #00EBC7;
+  border-radius: 8px; */
   width: 100%;
   padding-bottom: 25px;
   margin-bottom: 25px;
+}
+
+.homepage-lineup h2{
+  padding-top: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: #00EBC7;
 }
 
 .lineuplisting{
@@ -1000,6 +1006,52 @@ input[name="r"]{
   background-color: #009d85;
 }
 
+.latest-news{
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.latest-news h2{
+  padding-top: 1.5rem;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #00EBC7;
+}
+
+.news-col img{
+  padding-left: 10%;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.news-container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.news-container .news-col{
+  float: left;
+  width: 50%;
+  padding: 0.7rem;
+}
+
+.news-col span{
+  font-weight: bold;
+}
+
+.dotLineDivid {
+	margin: 3em 0;
+	border-top: 2px solid #7a7a7a;
+}
+
+@media screen and (max-width: 890px) {
+  .news-container .news-col {
+    width: 100%;
+  }
+}
+
+/* footer */
 .footer-content{
   background-color: #00EBC7;
   display: flex;
@@ -1012,6 +1064,8 @@ input[name="r"]{
   padding: 10px;
 }
 
+
+/* citation page */
 #citations h1{
   text-align: left;
 }
