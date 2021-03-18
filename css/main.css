@@ -801,19 +801,18 @@ h5 {
 }
 
 .aboutus-box p{
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 
 .aboutus-container img{
   padding: 0 1rem 0 1rem;
-  max-width: 45%;
+  width: 45%;
   height: auto;
 }
 
 .aboutus-container span{
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.2vw;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  font-size: 1rem;
 }
 
 #contactus{
@@ -828,13 +827,45 @@ h5 {
 }
 
 @media screen and (max-width: 890px){
+  .aboutus-box p{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .aboutus-container img{
+    display: block;
+    width: 100%;
+    max-height: 300px;
+  }
   .aboutus-box .aboutus-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+  .vl{
+    display: none;
+  }
 }
 
+.contactus{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contactus label{
+  font-weight: bold;
+}
+
+.contactus input[type=text], select, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #00EBC7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
 
 /* home page */
 .slidershow{
