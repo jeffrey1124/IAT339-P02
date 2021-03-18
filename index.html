@@ -111,7 +111,7 @@
 
     <div class="element">
       <h3>Image as a Link</h3>
-      <a href="#" class="item-image"><img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food"></a>
+      <a href="#" class="item-image"><img src="img/petfood1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food"></a>
       <h4>CSS selector:</h4>
       <p>.item-image</p>
       <h4>Sample code:</h4>
@@ -175,31 +175,21 @@
     <div class="navi">
       <h3>Main Navigation</h3>
       <div class="top-menu">
-        <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
-        <a class="menu" id="checked" href="product_listing.html">Food</a>
-        <a class="menu" href="#Toy">Toy</a>
-        <a class="menu" href="#Health">Health</a>
-        <a class="menu" href="#Supplies">Supplies</a>
-        <a class="menu" href="#Sale">Sale</a>
-        <a class="menu" href="#Info">Information</a>
-        <a class="icons" href="#Acc"><i class="fas fa-user-circle"></i></a>
-        <a class="icons" href="#search"><i class="fas fa-search"></i></a>
+        <a class="logo" href="home.html"><img src="img/logo.png" alt="logo of CatWorld"></a>
+        <a class="menu" id="checked" href="home.html">Home</a>
+        <a class="menu" href="product_listing.html">Products</a>
+        <a class="menu" href="about_us.html">About Us</a>
         <a class="icons" href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
         <a class="icons" id="ham" href="#"><i class="fa fa-bars"></i></a>
       </div>
       <h4>Sample code:</h4>
       <code>
-        &lt;a class=&quot;logo&quot; href=&quot;index.html&quot;&gt;&lt;img src=&quot;img/logo.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; id=&quot;checked&quot; href=&quot;product_listing.html&quot;&gt;Food&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; href=&quot;#Toy&quot;&gt;Toy&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; href=&quot;#Health&quot;&gt;Health&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; href=&quot;#Supplies&quot;&gt;Supplies&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; href=&quot;#Sale&quot;&gt;Sale&lt;/a&gt;<br>
-        &lt;a class=&quot;menu&quot; href=&quot;#Info&quot;&gt;Information&lt;/a&gt;<br>
-        &lt;a class=&quot;icons&quot; href=&quot;#Acc&quot;&gt;&lt;i class=&quot;fas fa-user-circle&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
-        &lt;a class=&quot;icons&quot; href=&quot;#search&quot;&gt;&lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
-        &lt;a class=&quot;icons&quot; href=&quot;checkout.html&quot;&gt;&lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
-        &lt;a class=&quot;icons&quot; id=&quot;ham&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;logo&quot; href=&quot;home.html&quot;&gt;&lt;img src=&quot;img/logo.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; id=&quot;checked&quot; href=&quot;home.html&quot;&gt;Home&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;product_listing.html&quot;&gt;Products&lt;/a&gt;<br>
+        &lt;a class=&quot;menu&quot; href=&quot;about_us.html&quot;&gt;about_us&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; href=&quot;checkout.html&quot;&gt;&lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/a&gt;<br>
+        &lt;a class=&quot;icons&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/a&gt;<br>
       </code>
     </div>
 
@@ -208,7 +198,7 @@
       <div class="item-list">
         <ul>
           <li>
-            <a href="#"><img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food" class="list-img"></a>
+            <a href="#"><img src="img/petfood1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food" class="list-img"></a>
             <div class="listing">
               <h3><a href="#" class="item-title">Purina ONE® Urinary Tract Health Formula Cat Food</a></h3>
               <p>
@@ -246,14 +236,14 @@
     <div class="element">
       <h3>Payment Form</h3>
       <form class="payment">
-        <label for="CN">Card Number:</label>
+        <label for="CN"><i class="far fa-credit-card"></i> Card Number:</label>
         <input type="text" id="CN" placeholder="Card Number">
-        <label for="CHN">Card Holder Name:</label>
-        <input type="text" id="CHN" placeholder="Card Holder Name"><br>
-        <label for="EDate">Expiry Date:</label>
-        <input type="date" id="EDate">
-        <label for="CVV">CVV:</label>
-        <input type="text" id="CVV" placeholder="CVV"><br>
+        <label for="CHN"><i class="fas fa-user"></i> Card Holder Name:</label>
+        <input type="text" id="CHN" placeholder="Card Holder Name">
+        <label for="EDate"><i class="fas fa-calendar-day"></i> Expiry Date:</label>
+        <input type="date" id="EDate"><br>
+        <label for="CVV"><i class="fas fa-key"></i> CVV:</label>
+        <input type="text" id="CVV" placeholder="CVV">
         <button class="SubButton">Submit</button>
       </form>
       <h4>Sample code:</h4>
@@ -287,11 +277,11 @@
             <td>
               <div class="checkout-info">
                 <div class="checkout-imgs">
-                  <img src="img/f1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food">
+                  <img src="img/petfood1.png" alt="Purina ONE® Urinary Tract Health Formula Cat Food">
                 </div>
                 <div>
-                  <a href="#" class="item-title" >Purina ONE® Urinary Tract Health Formula Cat Food</a><br>
-                  <a href="#" class="remove">Remove</a>
+                  <a href="product_details1.html" class="item-title out-title">Purina ONE® Urinary Tract Health Formula Cat Food</a><br>
+                  <a href="#" class="remove">Remove<i class="fas fa-trash-alt"></i></a>
                 </div>
               </div>
             </td>
@@ -313,11 +303,11 @@
             <td>
               <div class="checkout-info">
                 <div class="checkout-imgs">
-                  <img src="img/h1.jpg" alt="Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle">
+                  <img src="img/petfood2.png" alt="Beyond Grain Free Arctic Char & Lentil Recipe Dry Cat Food">
                 </div>
                 <div>
-                  <a href="#" class="item-title" >Four Paws® Earmite Treatment for Cats, 1 Ounce Bottle</a><br>
-                  <a href="#" class="remove">Remove</a>
+                  <a href="product_details2.html" class="item-title out-title">Beyond Grain Free Arctic Char & Lentil Recipe Dry Cat Food</a><br>
+                  <a href="#" class="remove">Remove<i class="fas fa-trash-alt"></i></a>
                 </div>
               </div>
             </td>
